@@ -1,11 +1,11 @@
 @font-face		{
-	src: url('http://silicoflare.great-site.net/data/lato_font.ttf');
+	src: url('http://silicoflare.github.io/data/lato_font.ttf');
 	font-family: 'Lato';
 }
 
 *			{
 	font-family: 'Lato';
-	cursor: url("http://silicoflare.great-site.net/data/cursor.cur") 0 0, auto;
+	cursor: url("http://silicoflare.github.io/data/cursor.cur") 0 0, auto;
     transition-duration: 0.5s;
 }
 
