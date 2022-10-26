@@ -1,0 +1,37 @@
+.collapsible              {
+    background-color: #7F00FF;
+	border: none;
+    color: white;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+}
+
+.active, .collapsible:hover {
+    background-color: #FF00FF;
+}
+
+.collapsible:after {
+    content: '+';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+  content: "-";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+img.big {
+  height: 50%;
+  width: 50%;
+}

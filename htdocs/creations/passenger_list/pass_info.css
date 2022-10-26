@@ -1,0 +1,71 @@
+@font-face 		{
+	font-family: "Orion";
+	src: url("../data/font_little_orion.otf");
+}
+
+h1		{
+	text-align: center;
+}
+
+header		{
+	padding: 20px;
+	background-color: yellow;
+	font-family: "Orion";
+	border: 3px solid black;
+	/*border-radius: 5px;*/
+}
+
+body		{
+	background-color: #FFFFFF;
+	padding: 7px;
+}
+
+.closebutton	{
+	float: right;
+	color: white;
+	background-color: red;
+	border: 2px solid black;
+	font-weight: bold;
+	font-size: 100%;
+}
+
+fieldset		{
+	border: 3px solid black;
+	background-color: #99FFFF;
+	/*border-radius: 5px;*/
+}
+
+legend		{
+	border: 3px solid black;
+	white-space: pre;
+	padding: 7px;
+	background-color: #FF88FF;
+	font-family: "Orion", sans-serif;
+	font-size: 110%;
+	/*border-radius: 7px;*/
+}
+
+label		{
+	font-family: "Orion", sans-serif;
+	font-size: 125%;
+}
+
+button		{
+	font-family: "Orion", sans-serif;
+	font-size: 125%;
+	background-color: #8AFF8A;
+	border: 2px solid black;
+	/*border-radius: 10px;*/
+}
+
+input		{
+	background-color: #FFFF8A;
+	border: 2px solid black;
+	font-family: cursive;
+}
+
+select		{
+	background-color: #FFFF8A;
+	border: 2px solid black;
+	font-family: cursive;
+}
