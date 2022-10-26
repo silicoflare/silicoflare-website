@@ -1,0 +1,341 @@
+@font-face		{
+	src: url('http://silicoflare.great-site.net/data/lato_font.ttf');
+	font-family: 'Lato';
+}
+
+*			{
+	font-family: 'Lato';
+	cursor: url("http://silicoflare.great-site.net/data/cursor.cur") 0 0, auto;
+    transition-duration: 0.5s;
+}
+
+.tab       {
+    tab-size: 8;
+}
+
+button.menu		{
+	background-color: #7F00FF;
+	border: none;
+	color: white;
+	padding: 15px 15px;
+	text-align: center;
+	text-emphasis: bold;
+    display: inline-block;
+	font-size: 16px;
+    width: 150px;
+}
+
+button					{
+    text-align: center;
+    font-family: "Lato";
+    padding: 15px 15px;
+	font-size: 75%;
+    color: white;
+	background: #FF6600;
+	border: none;
+	transition-duration: 0.4s;
+}
+
+button.listing
+{
+    width: 75%;
+}
+
+button.listing:hover 		{
+	background: #FF0000;
+}
+
+button:hover			{
+	background: #ff00ff;
+}
+
+button.menu:hover 		{
+	background: #FF00FF;
+}
+
+button.clicked			{
+	background: #FF00FF;
+}
+
+input, textarea			{
+	background-color: #FFFF8A;
+	border: 2px solid black;
+	font-family: cursive;
+}
+
+header					{
+	padding: 10px;
+	background-color: #7F00FF;
+	font-family: "Lato";
+	border: none;
+	position: fixed;
+	right: 0px;
+	left: 0px;
+	top: 0px;
+	z-index: 999;
+}
+
+.title		{
+	left: 10;
+    top: 10;
+    text-align: left;
+	font-size: 250%;
+	color: white;
+}
+
+h1			{
+	text-align: center;
+	font-size: 300%;
+}
+
+.nav					{
+	padding: 7px;
+	float: right;
+}
+
+main				{
+	padding-top: 100px;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-size: 125%;
+}
+
+body                {
+    background-color: white;
+    color: black;
+}
+
+.phone              {
+    overflow: hidden;
+    background-color: #7F00FF;
+    position: relative;
+}
+
+.phone .title-phone        {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    display: inline-block;
+}
+
+.ham
+{
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+.phone .icon                       {
+    color: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.menu-item
+{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.dropdown-menu
+{
+    background-color: #333;
+    display: none;
+}
+
+.pc
+{
+    display: none;
+}
+
+a:link 
+{
+	color: #00FF00;
+	text-decoration: none;
+}
+
+a:hover
+{
+	background-color: #ff00ff;
+	text-decoration: underline;
+}
+
+a:visited
+{
+	color: #00FF00;
+	text-decoration: none;
+}
+
+a.insta:link
+{
+	/* Create the gradient. */
+	background-image: linear-gradient(90deg, purple, orange);
+  
+	/* Set the background size and repeat properties. */
+	background-size: 100%;
+	background-repeat: repeat;
+
+	/* Use the text as a mask for the background. */
+	/* This will show the gradient as a text color rather than element bg. */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+}
+
+a.insta:visited
+{
+	/* Create the gradient. */
+	background-image: linear-gradient(90deg, purple, orange);
+  
+	/* Set the background size and repeat properties. */
+	background-size: 100%;
+	background-repeat: repeat;
+
+	/* Use the text as a mask for the background. */
+	/* This will show the gradient as a text color rather than element bg. */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+}
+
+a.tele:link
+{
+	color: #1C9DD9;
+}
+a.tele:hover
+{
+	background-color: white;
+	text-decoration: none;
+}
+a.tele:visited
+{
+	color: #1C9DD9;
+}
+
+a.email:link
+{
+	color: #000000;
+}
+a.email:hover
+{
+	background-color: white;
+	text-decoration: none;
+}
+a.email:visited
+{
+	color: #000000;
+}
+
+a.discord:link
+{
+	color: #5865F2;
+}
+a.discord:hover
+{
+	background-color: white;
+	text-decoration: none;
+}
+a.discord:visited
+{
+	color: #5865F2;
+}
+
+a.reddit:link
+{
+	color: #FF4500;
+}
+a.reddit:hover
+{
+	background-color: white;
+	text-decoration: none;
+}
+a.reddit:visited
+{
+	color: #FF4500;
+}
+
+a.steam:link
+{
+	/* Create the gradient. */
+	background-image: linear-gradient(180deg, #161C34, #1D85B8);
+  
+	/* Set the background size and repeat properties. */
+	background-size: 100%;
+	background-repeat: repeat;
+
+	/* Use the text as a mask for the background. */
+	/* This will show the gradient as a text color rather than element bg. */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+}
+a.insta:visited
+{
+	/* Create the gradient. */
+	background-image: linear-gradient(180deg, #161C34, #1D85B8)
+  
+	/* Set the background size and repeat properties. */
+	background-size: 100%;
+	background-repeat: repeat;
+
+	/* Use the text as a mask for the background. */
+	/* This will show the gradient as a text color rather than element bg. */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+}
+
+a.twitch:link
+{
+	color: #9146FF;
+}
+a.twitch:hover
+{
+	background-color: white;
+	text-decoration: none;
+}
+a.twitch:visited
+{
+	color: #9146FF;
+}
+
+a.github:link
+{
+	color: #000000;
+}
+a.github:hover
+{
+	background-color: white;
+	text-decoration: none;
+}
+a.github:visited
+{
+	color: #000000;
+}
+
+a.xbox:link
+{
+	color: #007700;
+}
+a.xbox:hover
+{
+	background-color: white;
+	text-decoration: none;
+}
+a.xbox:visited
+{
+	color: #007700;
+}
