@@ -65,7 +65,7 @@ input, textarea			{
 
 header					{
 	padding: 10px;
-	height: 75px;
+	height: 60px;
 	background-color: #7F00FF;
 	font-family: "SilicoHand";
 	border: none;
@@ -77,6 +77,8 @@ header					{
 }
 
 .title		{
+	padding-top: 20px;
+	padding-left: 20px;
 	left: 25;
     top: 25;
     text-align: left;
