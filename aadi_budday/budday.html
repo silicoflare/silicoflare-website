@@ -11,25 +11,24 @@
     <link rel="stylesheet" href="aadi.css">
     <script src="https://kihtrak.com/cloud_variable/cloudify.min.js"></script>
     <script>
-        var time = new Date();
         var cloud_canAccess;
 
+	var before_12 = document.querySelector(".before12");
+        var after_12 = document.querySelector(".after12");
+	    
         function hideAndShow()    {
-            var before12 = document.querySelector(".before12");
-            var after12 = document.querySelector(".after12");
+            before_12.style.display = 'block';
+            after_12.style.display = 'none';
 
-            before12.style.display = 'block';
-            after12.style.display = 'none';
-
-            if(cloud_canAccess == true)
+            if(cloud_canAccess === 'yes')
             {
-                before12.style.display = 'none';
-                after12.style.display = 'block';
+                before_12.style.display = 'none';
+                after_12.style.display = 'block';
             }
 	    else
 	    {
-		before12.style.display = 'block';
-                after12.style.display = 'none';
+		before_12.style.display = 'block';
+                after_12.style.display = 'none';
 	    }
         }
     </script>
