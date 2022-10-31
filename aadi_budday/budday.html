@@ -21,11 +21,16 @@
             before12.style.display = 'block';
             after12.style.display = 'none';
 
-            if(cloud_canAccess)
+            if(cloud_canAccess == true)
             {
                 before12.style.display = 'none';
                 after12.style.display = 'block';
             }
+	    else
+	    {
+		before12.style.display = 'block';
+                after12.style.display = 'none';
+	    }
         }
     </script>
 </head>
