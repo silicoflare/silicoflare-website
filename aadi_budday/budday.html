@@ -22,11 +22,13 @@
 
             if(cloud_canAccess === 'yes')
             {
-                before_12.style.display = 'none';
+                console.log("True");
+		before_12.style.display = 'none';
                 after_12.style.display = 'block';
             }
 	    else
 	    {
+		console.log("False");
 		before_12.style.display = 'block';
                 after_12.style.display = 'none';
 	    }
