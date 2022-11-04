@@ -36,6 +36,10 @@ button					{
 	transition-duration: 0.4s;
 }
 
+button.large		{
+	font-size: 150%;
+}
+
 button.listing
 {
     width: 75%;
