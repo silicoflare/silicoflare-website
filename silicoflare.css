@@ -86,8 +86,12 @@ header					{
 }
 
 h0			{
-	font-size: 750%;
-	background-color: #7F00FF;
+	font-size: 1000%;
+	color: #7F00FF;
+}
+
+p.msg		{
+	font-size: 150%;
 }
 
 h1			{
