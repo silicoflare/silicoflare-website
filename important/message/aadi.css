@@ -1,0 +1,30 @@
+@font-face		{
+	src: url('./lato_font.ttf');
+	font-family: 'Lato';
+}
+
+*               {
+    font-family: Lato;
+}
+
+body    {
+    background: #000;
+    color: white;
+    padding: 0.5in;
+}
+
+h1      {
+    color: red;
+}
+
+button  {
+    background-color: gray;
+    color: #000;
+    border-radius: 0%;
+}
+
+.format     {
+    font-style: oblique;
+    text-align: center;
+    color: #00FF00;
+}
