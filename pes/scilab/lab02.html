@@ -82,7 +82,8 @@
                 temp.querySelector(".del").setAttribute("onclick", "delValue("+i+")");
                 list.appendChild(temp);
                 count++;
-                console.log(count)
+                document.getElementById("value"+(count-1)).focus();
+                console.log(count);
             }
 
             function init() {
