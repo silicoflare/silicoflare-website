@@ -48,6 +48,7 @@
         </form>
         <br><br>
         <h3>Copy your code from here:</h3>
+        <button type="button" onclick="copy"
         <div id="code">
             Enter all values and click 'Submit'
         </div>
@@ -57,7 +58,8 @@
         <script>
 
             var count = 0
-            
+            var finalCode = ""
+
             function delValue(num)  {
                 var divi = document.getElementById("value"+num);
                 divi.remove();
@@ -99,9 +101,9 @@
                 codeArea = document.getElementById("code");
                 startX = document.getElementById("value0").querySelector(".fld1").value;
                 endX = document.getElementById("value"+(count-1)).querySelector(".fld1").value;
-                codeArea.innerText = "x = "+startX+":"+(endX-startX)/(count-1)+":"+endX+";";
+                finalCode = "x = "+startX+":"+(endX-startX)/(count-1)+":"+endX+";";
 
-                codeArea.innerText += "\nx = x';"
+                finalCode += "\nx = x';"
 
                 var ySTR = "y = ["
                 for(i=0;i<count;i++)    {
@@ -110,21 +112,21 @@
                     if(i!=(count-1))
                         ySTR+=";"
                 }
-                codeArea.innerText += "\n"+ySTR+"]";
+                finalCode += "\n"+ySTR+"]";
 
-                codeArea.innerText += "\nplot(x,y)"+
+                finalCode += "\nplot(x,y)"+
                 "\nxlabel('$Volume\\ of\\ $K_{2}Cr_{2}O_{7}$\\ added\\ in\\ mL$')"+
                 "\nylabel('$Potential\\ (E)\\ in\\ mV$')"+
                 "\nxgrid()";
 
-                codeArea.innerText += "\nxstring(5.5, 450, ['Name: "+document.getElementById("stuName").value+"'])";
-                codeArea.innerText += "\nxstring(5.5, 425, ['SRN: "+document.getElementById("srn").value+"'])";
+                finalCode += "\nxstring(5.5, 450, ['Name: "+document.getElementById("stuName").value+"'])";
+                finalCode += "\nxstring(5.5, 425, ['SRN: "+document.getElementById("srn").value+"'])";
 
-                codeArea.innerText += "\nxstring(0.8, 850, ['SCALE'])"+
+                finalCode += "\nxstring(0.8, 850, ['SCALE'])"+
                 "\nxstring(0.5, 825, ['X-AXIS: 0.5 mL'])"+
                 "\nxstring(0.6, 800, ['Y-AXIS: 50 V'])";
 
-                codeArea.innerText += "\nscf"+
+                finalCode += "\nscf"+
                 "\nN = length(x)"+
                 "\ndydx = diff(y(:)) ./ diff(x(:))"+
                 "\ndydx(N) = dydx(N-1)"+
@@ -137,8 +139,9 @@
                 "\nxstring(0.5, 525, ['X-AXIS: 0.5 mL'])"+
                 "\nxstring(0.49, 500, ['Y-AXIS: 50 units'])";
 
-                codeArea.innerText += "\nxstring(5.5, 550, ['Name: "+document.getElementById("stuName").value+"'])";
-                codeArea.innerText += "\nxstring(5.5, 525, ['SRN: "+document.getElementById("srn").value+"'])";
+                finalCode += "\nxstring(5.5, 550, ['Name: "+document.getElementById("stuName").value+"'])";
+                finalCode += "\nxstring(5.5, 525, ['SRN: "+document.getElementById("srn").value+"'])";
+                codeArea.innerText = finalCode;
             }
         </script>
     </body>
