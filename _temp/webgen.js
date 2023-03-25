@@ -6,7 +6,7 @@ var b = document.body;
 
 var temp = document.createElement("h1");
 temp.innerHTML = "This is a heading!!";
-b.append(temp);
+b.innerHTML = temp;
 
 temp = document.createElement("h2");
 temp.innerHTML = 'Welcome!!';
