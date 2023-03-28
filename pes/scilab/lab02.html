@@ -56,6 +56,13 @@
 <!-- ------------------------------------------------------------------------ -->
 
         <script>
+            document.querySelector("fld1").addEventListener("change", genCode);
+            document.querySelector("fld2").addEventListener("change", genCode);
+
+            document.getElementById("stuName").addEventListener("change", genCode);
+            document.getElementById("srn").addEventListener("change", genCode);
+
+
 
             var count = 0
             var finalCode = ""
