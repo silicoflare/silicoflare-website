@@ -24,19 +24,19 @@
         <form>
             <p>
                 <label for="stuName">Name: </label>
-                <input type="text" id="stuName" placeholder="Enter your name" onchange="genCode()">
+                <input type="text" id="stuName" placeholder="Enter your name" onkeypress="genCode()" >
             </p>
             <p>
                 <label for="srn">SRN: </label>
-                <input type="text" id="srn" placeholder="Enter your SRN" onchange="genCode()">
+                <input type="text" id="srn" placeholder="Enter your SRN" onkeypress="genCode()">
             </p><br><br>
 
             <template id="vals">
                 <div class="value">
                     <label class="lbl1" for="x">X: </label>
-                        <input type="text" class="fld1" id="x" onchange="genCode()">&emsp;
+                        <input type="text" class="fld1" id="x" onkeypress="genCode()">&emsp;
                     <label class="lbl2" for="y">Y: </label>
-                        <input type="text" class="fld2" id="y" onchange="genCode()">&emsp;
+                        <input type="text" class="fld2" id="y" onkeypress="genCode()">&emsp;
                     <button type="button" class="del">×</button>
                 </div>
             </template>
