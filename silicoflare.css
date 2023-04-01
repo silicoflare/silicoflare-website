@@ -1,356 +1,118 @@
-@font-face		{
-	src: url('data/silicohand.ttf');
-	font-family: 'SilicoHand';
+@font-face {
+    font-family: SilicoHand;
+    src: url('data/silicohand.ttf');
 }
 
-*			{
-	font-family: 'SilicoHand';
-	cursor: url("data/cursor.cur") 0 0, auto;
-    	transition-duration: 0.5s;
+@font-face {
+    font-family: Ubuntu;
+    src: url('data/ubuntu.ttf');
 }
 
-.tab       {
-    tab-size: 8;
-}
-
-button.menu		{
-	background-color: #7F00FF;
-	border: none;
-	color: white;
-	padding: 15px 15px;
-	text-align: center;
-	text-emphasis: bold;
-    display: inline-block;
-	font-size: 16px;
-    width: 150px;
-}
-
-button					{
-    text-align: center;
-    font-family: "SilicoHand";
-    padding: 15px 15px;
-	font-size: 75%;
-    color: white;
-	background: #FF6600;
-	border: none;
-	transition-duration: 0.4s;
-}
-
-button.large		{
-	font-size: 150%;
-}
-
-button.listing
-{
-    width: 75%;
-}
-
-button.listing:hover 		{
-	background: #FF0000;
-}
-
-button:hover			{
-	background: #ff00ff;
-}
-
-button.menu:hover 		{
-	background: #FF00FF;
-}
-
-button.clicked			{
-	background: #FF00FF;
-}
-
-input, textarea			{
-	background-color: #FFFF8A;
-	border: 2px solid black;
-	font-family: cursive;
-}
-
-header					{
-	padding: 10px;
-	height: 60px;
-	background-color: #7F00FF;
-	font-family: "SilicoHand";
-	border: none;
-	position: fixed;
-	right: 0px;
-	left: 0px;
-	top: 0px;
-	z-index: 999;
-}
-
-.title		{
-	font-size: 250%; 
-	position: absolute;
-    top : 29%;
-    left: 1%;
-	color: white;
-	
-}
-
-h0			{
-	font-size: 1000%;
-	color: #7F00FF;
-}
-
-p.msg		{
-	font-size: 150%;
-}
-
-h1			{
-	text-align: center;
-	font-size: 300%;
-}
-
-.nav					{
-	padding: 7px;
-	float: right;
-}
-
-main				{
-	padding-top: 100px;
-	padding-right: 10px;
-	padding-left: 10px;
-	font-size: 125%;
-}
-
-body                {
-    background-color: white;
-    color: black;
-}
-
-.phone              {
-    overflow: hidden;
-    background-color: #7F00FF;
-    position: relative;
-}
-
-.phone .title-phone        {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    display: inline-block;
-}
-
-.ham
-{
-  width: 35px;
-  height: 5px;
-  background-color: white;
-  margin: 6px 0;
-}
-
-.phone .icon                       {
-    color: white;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 15px;
+*       {
     font-size: 20px;
+    font-family: Ubuntu;
 }
 
-.menu-item
-{
-    display: block;
+#modeSel           {
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgba(53, 53, 53, 0.5);
+    position: fixed;
+    right: 0%;
+    bottom: 5%;
+    transition: 0.2s ease-in-out;
+}
+
+#mode       {
+    transition: 0.2s ease-in-out;
+    opacity: 0.5;
+}
+
+.tooltip        {
+    padding: 5px;
+    border: 0;
+    border-radius: 10px 15px;
+    background-color: rgba(53, 53, 53);
+    position: fixed;
+    right: 4%;
+    bottom: 6.5%;
+    display: none;
     color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+    transition: display 0.2s ease-in-out;
 }
 
-.dropdown-menu
-{
-    background-color: #333;
-    display: none;
+header      {
+    z-index: 999;
+    font-family: SilicoHand;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: none;
+    background-color: #7f00ff;
+    display: flex;
+    align-items: center;
 }
 
-.pc
-{
-    display: none;
+.heading        {
+    font-family: SilicoHand;
+    display: inline-block;
+    padding: 30px 400px 30px 30px;
+    font-size: 50px;
+    color: white;
 }
 
-a:link 
-{
-	color: #00FF00;
-	text-decoration: none;
+.menu           {
+    font-family: SilicoHand;
+    padding: 20px;
+    margin: 5px;
+    font-size: 20px;
+    color: white;
+    display: inline;
+    float: right;
+    min-width: 150px;
+    transition: background-color 0.2s ease-in-out;
+    text-align: center;
 }
 
-a:hover
-{
-	/*background-color: #ff00ff;*/
-	text-decoration: underline;
+.menu:hover     {
+    background-color: #f0f;
 }
 
-a:visited
-{
-	color: #00FF00;
-	text-decoration: none;
+.menu.selected     {
+    background-color: #f0f;
 }
 
-a.insta:link
-{
-	/* Create the gradient. */
-	background-image: linear-gradient(90deg, purple, orange);
-  
-	/* Set the background size and repeat properties. */
-	background-size: 100%;
-	background-repeat: repeat;
-
-	/* Use the text as a mask for the background. */
-	/* This will show the gradient as a text color rather than element bg. */
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent; 
-	-moz-background-clip: text;
-	-moz-text-fill-color: transparent;
+.bigtext         {
+    font-size: 100px;
+    text-align: center;
 }
 
-a.insta:visited
-{
-	/* Create the gradient. */
-	background-image: linear-gradient(90deg, purple, orange);
-  
-	/* Set the background size and repeat properties. */
-	background-size: 100%;
-	background-repeat: repeat;
-
-	/* Use the text as a mask for the background. */
-	/* This will show the gradient as a text color rather than element bg. */
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent; 
-	-moz-background-clip: text;
-	-moz-text-fill-color: transparent;
+.si             {
+    font: 100px SilicoHand;
+    color: #7f00ff;
 }
 
-a.tele:link
-{
-	color: #1C9DD9;
-}
-a.tele:hover
-{
-	background-color: white;
-	text-decoration: none;
-}
-a.tele:visited
-{
-	color: #1C9DD9;
+.f              {
+    font: 100px SilicoHand;
+    color: orangered;
+}            
+
+body            {
+    transition: background-color 0.2s ease-in-out;
+    transition: color 0.5s ease-in-out;
 }
 
-a.email:link
-{
-	color: #000000;
-}
-a.email:hover
-{
-	background-color: white;
-	text-decoration: none;
-}
-a.email:visited
-{
-	color: #000000;
+main            {
+    font-size: 25px;
+    padding: 0 35px;
 }
 
-a.discord:link
-{
-	color: #5865F2;
-}
-a.discord:hover
-{
-	background-color: white;
-	text-decoration: none;
-}
-a.discord:visited
-{
-	color: #5865F2;
-}
-
-a.reddit:link
-{
-	color: #FF4500;
-}
-a.reddit:hover
-{
-	background-color: white;
-	text-decoration: none;
-}
-a.reddit:visited
-{
-	color: #FF4500;
-}
-
-a.steam:link
-{
-	/* Create the gradient. */
-	background-image: linear-gradient(180deg, #161C34, #1D85B8);
-  
-	/* Set the background size and repeat properties. */
-	background-size: 100%;
-	background-repeat: repeat;
-
-	/* Use the text as a mask for the background. */
-	/* This will show the gradient as a text color rather than element bg. */
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent; 
-	-moz-background-clip: text;
-	-moz-text-fill-color: transparent;
-}
-a.insta:visited
-{
-	/* Create the gradient. */
-	background-image: linear-gradient(180deg, #161C34, #1D85B8);
-  
-	/* Set the background size and repeat properties. */
-	background-size: 100%;
-	background-repeat: repeat;
-
-	/* Use the text as a mask for the background. */
-	/* This will show the gradient as a text color rather than element bg. */
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent; 
-	-moz-background-clip: text;
-	-moz-text-fill-color: transparent;
-}
-
-a.twitch:link
-{
-	color: #9146FF;
-}
-a.twitch:hover
-{
-	background-color: white;
-	text-decoration: none;
-}
-a.twitch:visited
-{
-	color: #9146FF;
-}
-
-a.github:link
-{
-	color: #000000;
-}
-a.github:hover
-{
-	background-color: white;
-	text-decoration: none;
-}
-a.github:visited
-{
-	color: #000000;
-}
-
-a.xbox:link
-{
-	color: #007700;
-}
-a.xbox:hover
-{
-	background-color: white;
-	text-decoration: none;
-}
-a.xbox:visited
-{
-	color: #007700;
+.centred        {
+    text-align: center;
 }
