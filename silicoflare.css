@@ -89,17 +89,17 @@ header      {
 }
 
 .bigtext         {
-    font-size: 100px;
+    font-size: 7vw;
     text-align: center;
 }
 
 .si             {
-    font: 100px SilicoHand;
+    font: 7vw SilicoHand;
     color: #7f00ff;
 }
 
 .f              {
-    font: 100px SilicoHand;
+    font: 7vw SilicoHand;
     color: orangered;
 }            
 
@@ -109,8 +109,8 @@ body            {
 }
 
 main            {
-    font-size: 25px;
-    padding: 0 35px;
+    font-size: 2vw;
+    padding: 0 2.28vw;
 }
 
 .centred        {
