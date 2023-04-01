@@ -109,8 +109,14 @@ body            {
 }
 
 main            {
-    font-size: 30px;
+    font-size: 2.2vw;
     padding: 0 2.28vw;
+}
+
+@media only screen and (max-width: 1000px) {
+    main    {
+        font-size: 17.5px;
+    }
 }
 
 .centred        {
