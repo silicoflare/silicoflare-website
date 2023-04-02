@@ -1,4 +1,5 @@
 var current = "dark";
+var isActive = false;
 
 function changeMode() {
     if (current == 'dark') {
@@ -17,7 +18,6 @@ function changeMode() {
     }
 }
 
-
 function hoverIn() {
     document.getElementById("modeSel").style.backgroundColor = "rgba(53, 53, 53, 1)";
     document.getElementById("mode").style.opacity = 1;
@@ -28,4 +28,17 @@ function hoverOut() {
     document.getElementById("modeSel").style.backgroundColor = "rgba(53, 53, 53, 0.5)";
     document.getElementById("mode").style.opacity = 0.5;
     document.querySelector(".tooltip").style.display = "none";
+}
+
+function hamburger() {
+    if (!isActive) {
+        document.getElementById("ph-links").style.display = "block";
+        document.getElementById("overlay").style.display = "block";
+        isActive = true;
+    }
+    else {
+        document.getElementById("ph-links").style.display = "none";
+        document.getElementById("overlay").style.display = "none";
+        isActive = false;
+    }
 }

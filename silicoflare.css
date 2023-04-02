@@ -59,23 +59,70 @@ header      {
     align-items: center;
 }
 
+.phone          {
+    display: none;
+    font-family: SilicoHand;
+    padding: 1.95vw 26vw 1.95vw 1.95vw;
+    font-size: 5vw;
+    color: white;
+}
+
+.heading-ph      {
+    font-family: SilicoHand;
+    padding: 0.5vw;
+    font-size: 5vw;
+    color: white;
+}
+
+.ham            {
+    font-size: 5vw;
+    font-weight: bolder;
+    position: fixed;
+    right: 0.5%;
+    top: -0.5%;
+    padding: 1.5%;
+    display: inline;
+}
+
+#ph-links        {
+    display: none;
+    margin-top: 2vw;
+    background-color: rgb(40, 40, 40);
+    width: 100%;
+    position: fixed;
+    left: 0%;
+    padding: 1.5vw;
+    transition: all 0.2s linear;
+}
+
+.menu-ph        {
+    padding: 1vw;
+    font-size: 3vw;
+    margin-right: 3vw;
+    transition: all 0.2s linear;
+}
+
+.menu-ph:hover  {
+    background-color: #f0f;
+}
+
 .heading        {
     font-family: SilicoHand;
     display: inline-block;
-    padding: 30px 400px 30px 30px;
-    font-size: 50px;
+    padding: 1.95vw 26vw 1.95vw 1.95vw;
+    font-size: 3.25vw;
     color: white;
 }
 
 .menu           {
     font-family: SilicoHand;
-    padding: 20px;
+    padding: 1.3vw;
     margin: 5px;
-    font-size: 20px;
+    font-size: 1.3vw;
     color: white;
     display: inline;
     float: right;
-    min-width: 150px;
+    min-width: 9.76vw;
     transition: background-color 0.2s ease-in-out;
     text-align: center;
 }
@@ -86,6 +133,19 @@ header      {
 
 .menu.selected     {
     background-color: #f0f;
+}
+
+#overlay        {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(15, 15, 15, 0.7);
+    width: 100%;
+    height: 100%;
+    z-index: 900;
 }
 
 .bigtext         {
@@ -104,6 +164,7 @@ header      {
 }            
 
 body            {
+    padding-top: 10vw;
     transition: background-color 0.2s ease-in-out;
     transition: color 0.5s ease-in-out;
 }
@@ -116,6 +177,14 @@ main            {
 @media only screen and (max-width: 1000px) {
     main    {
         font-size: 17.5px;
+    }
+    
+    .pc     {
+        display: none;
+    }
+
+    .phone  {
+        display: block;
     }
 }
 
