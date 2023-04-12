@@ -59,11 +59,6 @@
         var count = 0
         var finalCode = ""
 
-        function copyCode() {
-            navigator.clipboard.writeText(finalCode);
-            window.alert("Copied to clipboard!");
-        }
-
         function delValue(num)  {
             var divi = document.getElementById("value"+num);
             divi.remove();
@@ -147,6 +142,11 @@
             "\nxstring(0.5, 7.5, ['X-AXIS: 0.5 mL'])"+
             "\nxstring(0.5, 7, ['Y-AXIS: 1 pH (starts from 2)'])";
             codeArea.innerText = finalCode;
+        }
+
+        function copyCode() {
+            navigator.clipboard.writeText(finalCode);
+            window.alert("Copied to clipboard!");
         }
     </script>
     </body>

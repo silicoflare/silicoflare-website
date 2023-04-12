@@ -59,11 +59,6 @@
             var count = 0
             var finalCode = ""
 
-            function copyCode() {
-                navigator.clipboard.writeText(finalCode);
-                window.alert("Copied to clipboard!");
-            }
-
             function delValue(num)  {
                 var divi = document.getElementById("value"+num);
                 divi.remove();
@@ -146,6 +141,11 @@
                 finalCode += "\nxstring(5.5, 550, ['Name: "+document.getElementById("stuName").value+"'])";
                 finalCode += "\nxstring(5.5, 525, ['SRN: "+document.getElementById("srn").value+"'])";
                 codeArea.innerText = finalCode;
+            }
+
+            function copyCode() {
+                navigator.clipboard.writeText(finalCode);
+                window.alert("Copied to clipboard!");
             }
         </script>
     </body>
