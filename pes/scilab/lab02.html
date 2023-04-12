@@ -113,20 +113,20 @@
                 }
                 finalCode += "\n"+ySTR+"]";
 
-                finalCode += "\nplot(x,y)"+
-                "\nxlabel('$Volume\\ of\\ $K_{2}Cr_{2}O_{7}$\\ added\\ in\\ mL$')"+
-                "\nylabel('$Potential\\ (E)\\ in\\ mV$')"+
-                "\nxgrid()";
+                // finalCode += "\nplot(x,y)"+
+                // "\nxlabel('$Volume\\ of\\ $K_{2}Cr_{2}O_{7}$\\ added\\ in\\ mL$')"+
+                // "\nylabel('$Potential\\ (E)\\ in\\ mV$')"+
+                // "\nxgrid()";
 
-                finalCode += "\nxstring(5.5, 450, ['Name: "+document.getElementById("stuName").value+"'])";
-                finalCode += "\nxstring(5.5, 425, ['SRN: "+document.getElementById("srn").value+"'])";
+                // finalCode += "\nxstring(5.5, 450, ['Name: "+document.getElementById("stuName").value+"'])";
+                // finalCode += "\nxstring(5.5, 425, ['SRN: "+document.getElementById("srn").value+"'])";
 
-                finalCode += "\nxstring(0.8, 850, ['SCALE'])"+
-                "\nxstring(0.5, 825, ['X-AXIS: 0.5 mL'])"+
-                "\nxstring(0.6, 800, ['Y-AXIS: 50 V'])";
+                // finalCode += "\nxstring(0.8, 850, ['SCALE'])"+
+                // "\nxstring(0.5, 825, ['X-AXIS: 0.5 mL'])"+
+                // "\nxstring(0.6, 800, ['Y-AXIS: 50 V'])";
 
-                finalCode += "\nscf"+
-                "\nN = length(x)"+
+                // finalCode += "\nscf"+
+                finalCode += "\nN = length(x)"+
                 "\ndydx = diff(y(:)) ./ diff(x(:))"+
                 "\ndydx(N) = dydx(N-1)"+
                 "\nx1 = x + 0.5"+
