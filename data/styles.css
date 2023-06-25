@@ -8,6 +8,10 @@
     src: url('silicohand.ttf');
 }
 
+.stackedit__html {
+	max-width: 900px;
+}
+
 body    {
     background-color: #FFFFFF;
     color: #000;
