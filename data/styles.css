@@ -1,3 +1,5 @@
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+
 @font-face {
     font-family: 'Noto Math';
     src: url('noto-math.ttf');
@@ -6,6 +8,11 @@
 @font-face {
     font-family: 'SilicoHand';
     src: url('silicohand.ttf');
+}
+
+@font-face {
+    font-family: 'Hurmit';
+    src: url('hurmit.otf');
 }
 
 .stackedit__html {
@@ -65,10 +72,32 @@ div.logo        {
     font-family: 'SilicoHand';
 }
 
-span.silico     {
+.silicoflare    {
+    font-family: 'SilicoHand';
+}
+
+.silicoflare::before {
+    content: "Silico";
     color: #7F00FF;
 }
 
-span.flare     {
-    color: #ff4500;
+.silicoflare::after {
+    content: "Flare";
+    color: #FF4500;
+}
+
+.sif-font-silicohand {
+    font-family: 'SilicoHand';
+}
+
+.sif-text-orange {
+    color: #FF4500;
+}
+
+.sif-text-purple {
+    color: #7F00FF;
+}
+
+.token {
+    font-family: "Hurmit";
 }
