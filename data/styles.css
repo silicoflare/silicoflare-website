@@ -98,6 +98,10 @@ div.logo        {
     color: #7F00FF;
 }
 
+code {
+    font-family: "Hurmit";
+}
+
 .token {
     font-family: "Hurmit";
 }
