@@ -1,0 +1,115 @@
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+
+@font-face {
+    font-family: 'Noto Math';
+    src: url('noto-math.ttf');
+}
+
+@font-face {
+    font-family: 'SilicoHand';
+    src: url('silicohand.ttf');
+}
+
+@font-face {
+    font-family: 'Hurmit';
+    src: url('hurmit.otf');
+}
+
+.stackedit__html {
+	max-width: 900px;
+}
+
+body    {
+    background-color: #FFFFFF;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* color: #FFC000; */
+
+h1      {
+    background-color: #313C71;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    border: 0px;
+    font-family: 'SilicoHand';
+/*     text-transform: uppercase; */
+}
+
+h1::after       {
+    border-bottom: none;
+}
+
+h2      {
+    color: #313C71;
+    text-transform: uppercase;
+}
+
+h2::after       {
+    border-bottom: 1px solid #313C71;
+}
+
+h3      {
+    color: #EF7F1A;
+}
+
+span.katex-html      {
+    color: #0A2342;
+    /* font-weight: bolder; */
+    font-family: 'Noto Math';
+}
+
+.katex--inline      {
+    color: #0A2342;
+    /* font-weight: bolder; */
+    font-family: 'Noto Math';
+}
+
+div.logo        {
+    text-align: right;
+    font-size: 30px;
+    font-family: 'SilicoHand';
+}
+
+.silicoflare    {
+    font-family: 'SilicoHand';
+}
+
+.silicoflare::before {
+    content: "Suraj";
+    color: #7F00FF;
+}
+
+.silicoflare::after {
+    content: " B M";
+    color: #FF4500;
+}
+
+.sif-font-silicohand {
+    font-family: 'SilicoHand';
+}
+
+.sif-text-orange {
+    color: #FF4500;
+}
+
+.sif-text-purple {
+    color: #7F00FF;
+}
+
+code {
+    font-family: "Hurmit";
+}
+
+.token {
+    font-family: "Hurmit";
+}
+
+.img     {
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
