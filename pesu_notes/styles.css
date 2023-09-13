@@ -113,3 +113,11 @@ code {
     justify-content: center;
     width: auto;
 }
+
+table   {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
