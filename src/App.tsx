@@ -1,4 +1,4 @@
-import { Portfolio, MainHead, Avatar, Intro, PortSection, SubHead, LinkBar, SocialLink, BulletList, ListItem, MD, Label, CardList, Card } from '@silicoflare/portfolify';
+import { Portfolio, MainHead, Avatar, Intro, PortSection, SubHead, LinkBar, SocialLink, MD, CardList, Card } from '@silicoflare/portfolify';
 
 
 export default function App()   {
