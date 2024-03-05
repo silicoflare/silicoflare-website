@@ -497,10 +497,10 @@
   resolved "https://registry.yarnpkg.com/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.12.0.tgz#9ffdf9ed133a7464f4ae187eb9e1294413fab235"
   integrity sha512-ZYmr5mS2wd4Dew/JjT0Fqi2NPB/ZhZ2VvPp7SmvPZb4Y1CG/LRcS6tcRo2cYU7zLK5A7cdbhWnnWmUjoI4qapg==
 
-"@silicoflare/portfolify@^1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@silicoflare/portfolify/-/portfolify-1.5.0.tgz#e4198baf20de06a558a9917ecf023ae66495f817"
-  integrity sha512-5tsaoryYWtYuWTJsIqHM00TOabYuhg/3t21s5ec6A+Zeqy66tu2X30KY2QTy29Evdpe7sTb44o+OmA+b/bRobQ==
+"@silicoflare/portfolify@^1.5.1":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@silicoflare/portfolify/-/portfolify-1.5.1.tgz#e20035e44f316a242ad5c315d0a182e8e424c903"
+  integrity sha512-K1Pl5Nvr/mPqybvQ+ZYrz1vZ8cuY/a0ZHo4dJek21G/Tldr2V/UBN6xUk269ap7hKib5HRbFoiE6ssA291NYCA==
 
 "@types/babel__core@^7.20.5":
   version "7.20.5"
