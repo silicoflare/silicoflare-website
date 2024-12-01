@@ -3,9 +3,11 @@ import ProjectCard from "./components/ProjectCard";
 import { links, projects } from "./data";
 import JSConfetti from "js-confetti";
 import dayjs from "dayjs";
+import { ChevronDownIcon } from "lucide-react";
 
 export default function App() {
   const [bday, setBday] = useState(false);
+  const [hideChevron, setHideChevron] = useState(false);
 
   useEffect(() => {
     const today = dayjs();
@@ -14,10 +16,31 @@ export default function App() {
       const confetti = new JSConfetti();
       confetti.addConfetti();
     }
+
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setHideChevron(true);
+      } else {
+        setHideChevron(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup listener on unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
     <div className="w-screen h-screen flex flex-col gap-3 bg-base-100 text-base-content md:text-lg md:p-10 font-space-grotesk">
+      {!hideChevron && (
+        <ChevronDownIcon
+          size={30}
+          className="text-primary absolute bottom-3 left-1/2 animate-bounce block md:hidden"
+        />
+      )}
       <div className="header md:mt-20 w-screen md:w-full h-screen md:h-full flex flex-col justify-center gap-2 text-center md:text-left px-10 md:px-20 flex-shrink-0 md:flex-shrink">
         {bday && (
           <div className="text-2xl md:text-3xl font-semibold text-primary">
