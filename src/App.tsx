@@ -17,8 +17,8 @@ export default function App() {
   }, []);
 
   return (
-    <div className="w-screen h-screen flex flex-col gap-3 bg-base-100 text-base-content md:text-lg p-2 md:p-10 font-space-grotesk">
-      <div className="mt-[15rem] md:mt-10 my-5 px-10 md:px-20 flex flex-col justify-center gap-2 text-center md:text-left">
+    <div className="w-screen h-screen flex flex-col gap-3 bg-base-100 text-base-content md:text-lg md:p-10 font-space-grotesk">
+      <div className="header md:mt-20 w-screen md:w-full h-screen md:h-full flex flex-col justify-center gap-2 text-center md:text-left px-10 md:px-20 flex-shrink-0 md:flex-shrink">
         {bday && (
           <div className="text-2xl md:text-3xl font-semibold text-primary">
             Level {dayjs().diff("2003-09-23", "years")}!
@@ -27,7 +27,7 @@ export default function App() {
         <h1 className="text-5xl md:text-6xl font-bold text-primary">
           Suraj “SilicoFlare”
         </h1>
-        TypeScript maniac, student, gamer and an avid Linux user.
+        <p>TypeScript maniac, student, gamer and an avid Linux user.</p>
         <div className="w-full flex items-center gap-3 justify-center md:justify-start">
           <a
             href="/resume.pdf"
@@ -53,7 +53,6 @@ export default function App() {
           ))}
         </div>
       </div>
-      <div className="my-20 md:hidden"></div>
 
       <div className="my-10 flex flex-col px-10 md:px-20 w-full">
         <h2 className="text-2xl md:text-4xl font-bold text-primary font-space-grotesk">
@@ -71,7 +70,7 @@ export default function App() {
           ))}
         </div>
       </div>
-      <div className="p-20 py-10"></div>
+      <div className="md:p-20 md:py-10 p-5"></div>
     </div>
   );
 }
