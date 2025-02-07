@@ -69,8 +69,12 @@ export default function App() {
               <img
                 height="20"
                 width="20"
-                src={`https://cdn.simpleicons.org/${title}/FFD100`}
+                src={`https://unpkg.com/simple-icons@v11/icons/${title}.svg`}
                 className="text-accent hover:scale-110 transition ease-in-out duration-200"
+                style={{
+                  filter:
+                    "invert(67%) sepia(85%) saturate(350%) hue-rotate(1deg)",
+                }}
               />
             </a>
           ))}

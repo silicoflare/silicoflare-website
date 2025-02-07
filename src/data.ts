@@ -13,6 +13,13 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    name: "nexgen-portal",
+    description:
+      "A portal for participant check-in, food coupons and logging snacks during NexGen 2.0",
+    repo: "silicoflare/nexgen-portal",
+    tech: ["nextdotjs", "mongodb"],
+  },
+  {
     name: "rapport",
     description:
       "An end-to-end encrypted messaging app written in Next.js. involving several layers of encryption",
@@ -24,7 +31,7 @@ export const projects: Project[] = [
     description:
       "An event ticketing system tailored for PES University, integrating ID Card verification for secure event access.",
     repo: "silicoflare/pesu-tix",
-    tech: ["nextdotjs", "trpc"],
+    tech: ["nextdotjs", "trpc", "postgresql"],
   },
   {
     name: "confidant",
