@@ -12,7 +12,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="w-screen h-screen flex flex-col justify-center items-center gap-3 bg-background text-foreground font-raleway">
+    <div className="w-screen h-screen flex flex-col justify-center items-center gap-3 bg-background text-foreground font-raleway overflow-hidden">
       <SiF />
       <div className="flex flex-col items-center gap-1 leading-none">
         <h1 className="text-4xl font-bold">SilicoFlare</h1>
@@ -28,7 +28,7 @@ export default function Home() {
         </a>
       </div>
 
-      <div className="flex items-center gap-10 mt-5">
+      <div className="flex items-center gap-5 md:gap-10 mt-5">
         <a href="mailto:hi@silicoflare.site">
           <CgMail size={40} />
         </a>
