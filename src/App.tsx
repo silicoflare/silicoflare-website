@@ -1,7 +1,7 @@
-import { InstagramIcon, LinkedinIcon, MailIcon } from "lucide-react";
 import SiF from "./SiF";
-import { SiGithub, SiReddit } from "@icons-pack/react-simple-icons";
 import { useEffect } from "react";
+import { CgMail } from "react-icons/cg";
+import { FaGithub, FaInstagram, FaLinkedin, FaReddit } from "react-icons/fa";
 
 export default function Home() {
   useEffect(() => {
@@ -30,19 +30,19 @@ export default function Home() {
 
       <div className="flex items-center gap-10 mt-5">
         <a href="mailto:hi@silicoflare.site">
-          <MailIcon size={30} />
+          <CgMail size={40} />
         </a>
         <a href="https://github.com/silicoflare">
-          <SiGithub size={30} />
+          <FaGithub size={30} />
         </a>
         <a href="https://www.linkedin.com/in/suraj-b-m">
-          <LinkedinIcon size={30} />
+          <FaLinkedin size={30} />
         </a>
         <a href="https://www.reddit.com/user/SilicoFlare">
-          <SiReddit size={30} />
+          <FaReddit size={30} />
         </a>
         <a href="https://instagram.com/silicoflare">
-          <InstagramIcon size={30} />
+          <FaInstagram size={30} />
         </a>
       </div>
     </div>
