@@ -20,9 +20,9 @@ export default function Home() {
       </div>
 
       <div className="flex items-center gap-3">
-        <a href="https://blog.silicoflare.site" className="underline">
+        {/* <a href="https://blog.silicoflare.site" className="underline">
           Blog
-        </a>
+        </a> */}
         <a href="/resume.pdf" className="underline">
           Resume
         </a>
