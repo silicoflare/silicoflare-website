@@ -16,20 +16,20 @@ export default function Home() {
       <SiF />
       <div className="flex flex-col items-center gap-1 leading-none">
         <h1 className="text-4xl font-bold">SilicoFlare</h1>
-        <div className="font-light">TypeScript Maniac</div>
+        <div className="font-light">Self-host Enthusiast</div>
       </div>
 
       <div className="flex items-center gap-3">
-        {/* <a href="https://blog.silicoflare.site" className="underline">
+        <a href="https://blog.silicoflare.dev" className="underline">
           Blog
-        </a> */}
+        </a>
         <a href="/resume.pdf" className="underline">
           Resume
         </a>
       </div>
 
       <div className="flex items-center gap-5 md:gap-10 mt-5">
-        <a href="mailto:hi@silicoflare.site">
+        <a href="mailto:hi@silicoflare.dev">
           <CgMail size={40} />
         </a>
         <a href="https://github.com/silicoflare">
