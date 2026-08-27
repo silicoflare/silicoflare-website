@@ -26,6 +26,9 @@ export default function Home() {
         <a href="/resume.pdf" className="underline">
           Resume
         </a>
+        <a href="https://ssh.silicoflare.dev" className="underline">
+          SSH
+        </a>
       </div>
 
       <div className="flex items-center gap-5 md:gap-10 mt-5">
