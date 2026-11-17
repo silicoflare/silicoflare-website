@@ -20,7 +20,7 @@ export default function Home() {
       </div>
 
       <div className="flex items-center gap-3">
-        <a href="https://blog.silicoflare.dev" className="underline">
+        <a href="https://social.hy-pr.link/" className="underline">
           Blog
         </a>
         <a href="/resume.pdf" className="underline">
